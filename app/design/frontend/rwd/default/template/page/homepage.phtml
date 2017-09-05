@@ -1,0 +1,340 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container home-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+            <div class="product-slide">
+                <ul class="bxslider">
+                    <li><img src="<?php echo $this->getSkinUrl('images/product-slide/1.jpg'); ?>" /></li>
+                    <li><img src="<?php echo $this->getSkinUrl('images/product-slide/1.jpg'); ?>" /></li>
+                    <li><img src="<?php echo $this->getSkinUrl('images/product-slide/1.jpg'); ?>" /></li>
+                    <li><img src="<?php echo $this->getSkinUrl('images/product-slide/1.jpg'); ?>" /></li>
+                </ul>
+            </div>
+            <div class="about-pdm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about-block">
+                                <div class="title">Why PDM.</div>
+                                <div class="description">
+                                    PDM Brand is a design company focused on lifestyle products as furniture and home textiles. The company has been operating since 2013 and is located in Bangkok, Thailand.
+                                </div>
+                                <div class="link"><a href="#">PDM’s HANDS</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image-block">
+                                <img src="<?php echo $this->getSkinUrl('images/inari-border-detail.png'); ?>">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mats-collection">
+                <div class="container">
+                    <div class="topic">Mats Collection</div>
+                    <div class="row">
+                        <?php for ($i=0; $i < 6; $i++): ?>
+                        <div class="col-md-3">
+                            <div class="items">
+                                <div class="image">
+                                    <div class="background" style="background: url('<?php echo $this->getSkinUrl('images/dimond-03.png'); ?>'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+                                </div>
+                                <div class="detail">
+                                    <div class="name">Diamond</div>
+                                    <div class="price">2,750 THB</div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endfor; ?>
+                    </div>
+                </div>
+            </div>
+            <div class="mats-size">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="size-image" data-size="1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-1">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-1.png'); ?>');
+                                                background-position: 0px 0px;
+                                                background-repeat: no-repeat;
+                                                width: 144px;
+                                                height: 137px;"></div>
+                                            <div class="text">Bedroom</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-2">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-1.png'); ?>');
+                                                background-position: -275px 0px;
+                                                background-repeat: no-repeat;
+                                                width: 173px;
+                                                height: 137px;"></div>
+                                            <div class="text">Living Room</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-3">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-1.png'); ?>');
+                                                background-position: 0px -225px;
+                                                background-repeat: no-repeat;
+                                                width: 144px;
+                                                height: 175px;"></div>
+                                            <div class="text">Dining</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-4">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-1.png'); ?>');
+                                                background-position: -302px -210px;
+                                                background-repeat: no-repeat;
+                                                width: 162px;
+                                                height: 175px;"></div>
+                                            <div class="text">Terrace and Pool area</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-example">*Example or the use</div>
+                            </div>
+                            <div class="size-image" data-size="2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="size-ex size-ex-1">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-2.png'); ?>');
+                                                background-position: 0px 0px;
+                                                background-repeat: no-repeat;
+                                                width: 144px;
+                                                height: 325px;"></div>
+                                            <div class="text">Bedroom</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="size-ex size-ex-2">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-2.png'); ?>');
+                                                background-position: -234px 0px;
+                                                background-repeat: no-repeat;
+                                                width: 177px;
+                                                height: 325px;"></div>
+                                            <div class="text">Living room and Lobby</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="size-ex size-ex-2">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-2.png'); ?>');
+                                                background-position: -513px 0px;
+                                                background-repeat: no-repeat;
+                                                width: 138px;
+                                                height: 325px;"></div>
+                                            <div class="text">Dining and Terrace</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-example">*Example or the use</div>
+                            </div>
+                            <div class="size-image" data-size="3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-1">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-3.png'); ?>');
+                                                background-position: -40px 0px;
+                                                background-repeat: no-repeat;
+                                                width: 130px;
+                                                height: 134px;"></div>
+                                            <div class="text">Bedroom</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-2">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-3.png'); ?>');
+                                                background-position: -284px -11px;
+                                                background-repeat: no-repeat;
+                                                width: 235px;
+                                                height: 134px;"></div>
+                                            <div class="text">Balcony and Terrace</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-3">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-3.png'); ?>');
+                                                background-position: 0px -208px;
+                                                background-repeat: no-repeat;
+                                                width: 207px;
+                                                height: 134px;"></div>
+                                            <div class="text">Entrances, Halls and Hallways</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="size-ex size-ex-4">
+                                            <div class="image" style="
+                                                background: url('<?php echo $this->getSkinUrl('images/size-3.png'); ?>');
+                                                background-position: -322px -220px;
+                                                background-repeat: no-repeat;
+                                                width: 162px;
+                                                height: 134px;"></div>
+                                            <div class="text">For Picnic, Beach, Yoga etc.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-example">*Example or the use</div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="topic">Size</div>
+                            <div class="size">
+                                <div class="size-border size-1" data-size="1">
+                                    <div class="size-info">180x270 cm</div>
+                                </div>
+                                <div class="size-border size-2" data-size="2">
+                                    <div class="size-info">150x240 cm</div>
+                                </div>
+                                <div class="size-border size-3" data-size="3">
+                                    <div class="size-info">90x200 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mats-features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="topic">
+                                <div class="icon vcenter"><img src="<?php echo $this->getSkinUrl('images/icon-circle.png'); ?>"></div>
+                                <div class="icon vcenter"><img src="<?php echo $this->getSkinUrl('images/icon-stick.png'); ?>"></div>
+                                <div class="text vcenter">Mat Features</div>
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                            </div>
+                            <div class="link">
+                                <div class="icon vcenter"><img src="<?php echo $this->getSkinUrl('images/icon-document.png'); ?>"></div>
+                                <div class="vcenter"><a href="#">Online Catalog</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+<script type="text/javascript">
+jQuery.noConflict();
+(function( $ ) {
+    $(function() {
+
+        function setProductSlide() {
+            $('.product-slide .bxslider').bxSlider();
+        }
+
+        function setDefaultMatsSize(size) {
+            $(`.size-border[data-size="${size}"]`).addClass('active');
+            $(`.mats-size .size-image[data-size="${size}"]`).show();
+        }
+
+        function handleClickSize() {
+            $('.mats-size .size-border').click(function() {
+                $('.mats-size .size-border').removeClass('active');
+                $(this).addClass('active');
+
+                const size = $(this).data('size');
+                $('.mats-size .size-image').hide();
+                $(`.mats-size .size-image[data-size="${size}"]`).show();
+            });
+        }
+
+        
+
+        function initMatsSize() {
+            setDefaultMatsSize('3');
+            handleClickSize();
+        }
+
+        function init() {
+            setProductSlide();
+            initMatsSize();
+        }
+
+        init();
+            
+    });
+})(jQuery);
+</script>
+</body>
+</html>
+
